@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/rop40.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/rop40.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/rop40.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="Jot5FtnU3_1IEcskRSKNRmAmd9E6iv_P9XMum46VDIU">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"rickytalk404.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.14.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":100,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="“时隔两年的又一次GPT时刻”">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="o1 时刻">
+<meta property="og:url" content="https://rickytalk404.github.io/2024/09/20/20240920-gpt-o1-time/index.html">
+<meta property="og:site_name" content="RickyTalk">
+<meta property="og:description" content="“时隔两年的又一次GPT时刻”">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://images.ctfassets.net/kftzwdyauwt9/3OO9wpK8pjcdemjd7g50xk/5ec2cc9d11f008cd754e8cefbc1c99f5/compute.png?w=3840&q=80&fm=webp">
+<meta property="article:published_time" content="2024-09-20T23:50:31.000Z">
+<meta property="article:modified_time" content="2025-11-10T06:41:37.446Z">
+<meta property="article:author" content="Ricky Z">
+<meta property="article:tag" content="tech">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.ctfassets.net/kftzwdyauwt9/3OO9wpK8pjcdemjd7g50xk/5ec2cc9d11f008cd754e8cefbc1c99f5/compute.png?w=3840&q=80&fm=webp">
+
+
+<link rel="canonical" href="https://rickytalk404.github.io/2024/09/20/20240920-gpt-o1-time/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://rickytalk404.github.io/2024/09/20/20240920-gpt-o1-time/","path":"2024/09/20/20240920-gpt-o1-time/","title":"o1 时刻"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>o1 时刻 | RickyTalk</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M266N9THY2"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-M266N9THY2","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="RickyTalk" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+      <img class="custom-logo-image" src="/images/icon.png" alt="RickyTalk">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">RickyTalk</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-email"><a href="https://rickytalk.substack.com/" rel="section" target="_blank"><i class="fa fa-envelope fa-fw"></i>email</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Ricky Z</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://rickytalk404.github.io/2024/09/20/20240920-gpt-o1-time/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Ricky Z">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RickyTalk">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="o1 时刻 | RickyTalk">
+      <meta itemprop="description" content="“时隔两年的又一次GPT时刻”">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          o1 时刻
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-09-20 23:50:31" itemprop="dateCreated datePublished" datetime="2024-09-20T23:50:31+00:00">2024-09-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">tech</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">“时隔两年的又一次GPT时刻”</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>2020年6月，疫情在全球爆发。彼时很少人注意到了有一家叫 OpenAI 的公司发布了一个模型 GPT-3，根据当时体验过它的人说，这个模型的能力可以在美国混一个大学文凭出来。可惜的是，我没有申请到内测的资格，但那个时候我就预感到 AI 的能力已经达到了可以使用的程度。大概两年之后，GPT-3.5 横空出世，搭载这个模型的 ChatGPT 成为了全球达到上亿用户最快的应用，这就是「GPT时刻」。</p>
+<p>又过了一年多，多模态的 GPT-4，GPT-4o 相继发布，具有更高的语言能力和图片能力，可以成为非常可用的生产力工具。在 GPT-3.5 爆火之后，所有的国内外公司都在遵循着 OpenAI 的路径发展 LLM, 如今 Google 有 Gemini 1.5 Pro, Anthropic 有 Claude Sonnet, Meta 有开源的 Llama 以及一系列基于 Llama 训练出来的第三方模型。根据我的体验，这些模型已经在能力上和 GPT-4 不相上下，甚至在有些方面超过了 GPT。在一些任务上比如编程上我认为 GPT 的表现不如一些其他的模型。</p>
+<p>就在大家都以为 OpenAI 快要落后的时候，2024年的9月12日，OpenAI 发布了最新的 o1 模型，这个模型的发布只在 x.com 的科技社区内掀起了讨论的声音，而在已经在近两年频繁听说 AI 的大众中并没有什么波澜。</p>
+<p>但是我认为 OpenAI 又一次为 AI 的发展指明了方向，这次是「o1时刻」。</p>
+<p>我已经使用这个模型一周了，主要是通过 o1 编写和修改程序，在这个方面我认为相比 GPT-4o，这个模型的进步太明显了。本质上就是这个模型学会了思考，能够拆分问题，具有了解决复杂问题的能力，它未必比 GPT-4 在文本处理上有什么进步，它的能力强在对于复杂问题的分析上。</p>
+<p>我也搜寻了一些看到过的例子来说明 o1 的能力：</p>
+<p>在编程竞赛平台 CodeForce ，o1 的表现已经超过了89%的程序员[1]。这个平台的比赛时长为两个小时，每场比赛包含5到7道题，参赛者通常需要在10万人中竞争，o1 的排名大概是第1万名，因为这个平台是编程竞赛平台，所以能够达到这个水平，可以说美国绝大部分公司的求职的面试算法题对于它来说都相当简单。它甚至可以应对中等难度的竞赛题，而且它的编程速度和代码质量都达到了非常高的水准。我看了一下它的代码，从完成的时间和题目难度来说，完全能够担当起「做题家」的称号。</p>
+<p>其次，o1 在数学方面的表现也非常出色。在美国数学奥林匹克国内竞赛 AIME 中，其水平可以进入全美前500。而在国际信息学奥林匹克竞赛 (IOI) 中，在10小时内最多可以提交50次的限制下，o1 可以排名前49%。而如果放宽到一个问题允许10000次提交，这个模型足以拿到金牌[2]。</p>
+<p>陶哲轩也试用了 o1，他认为在解决复杂的数学难题上，o1 比之前的模型更强，对于一些数学问题能够给出令人满意的解而且能够一步一步 formalize 一个证明问题，但是对于更复杂的数学问题，需要大量的提示，总体而言具备相当于数学研究生的水平 (“The experience seemed roughly on par with trying to advise a mediocre, but not completely incompetent, (static simulation of a) graduate student.”)。</p>
+<p>鉴于陶哲轩本人是2006年菲尔兹奖和 SASTRA 拉马努金奖的得主，是公认的天才数学家。o1 能被全球最聪明的人之一评价为有一般研究生水平，就和 NBA 历史三分球命中数记录保持者 Stephen Curry 评价你投篮水平还行，指导一下还能凑合当个替补差不多。</p>
+<p>我之所以认为 o1 是 AI 的巨大进步，是因为这个模型开始能够「思考」复杂问题。它与 GPT-4 的发展方向其实是不同的。</p>
+<p>从 GPT-3 开始到 GPT-4，AI 通过大量文本、图片等数据进行训练，逐渐演变成多模态的大模型，应用场景得到了丰富。但这些大模型的核心仍然是通过海量数据训练，虽然在文本组织能力和图片理解能力上有很好的表现，但在处理复杂任务时，依然欠缺深入的思考能力。GPT 往往像一个知道很多知识却不怎么思考的大学生，而 o1 则更像一个懂得思考和处理复杂问题的研究生或博士生。</p>
+<p>如果用卡尼曼的说法，GPT-4 相当于只有「系统一」，给什么命令立刻就有反应，虽然反应快但是可能回答不够稳妥；而o1相当于是具有了「系统二」，遇到问题先过一遍脑子，想想这个问题在问什么，有没有什么陷阱，可以拆分成什么小问题，再对每个小问题继续进行思考，最后再整合出一个答案，当然会花费更多的时间和消耗更多的资源。</p>
+<p>O1 的核心是“思维链”（Chain of Thought），它通过把复杂问题拆解成多个步骤进行推理，每走一步都会判断下一步该如何走。通过强化学习，O1通过不断地进行分支搜索，找到最优解。过去的 GPT 模型更多依赖人类编写的提示词（prompt），这些提示词往往需要非常复杂的编写步骤才能处理相对复杂的任务，本质上来说，这其实就是通过 prompt 来规定思考的步骤，也就是人为定义思维链，让AI执行。而 o1 则可以自行完成复杂问题的推理过程，在这个过程中，模型会向不同的方向思考下一步，然后继续在各个方向上分出更多的分叉，就像一棵树不停地向下分叉，最终选取更合适路径。正是因为这种思维链的存在，使得“提示词工程”（prompt engineering）变得没那么重要了，而且人类定义出来的思维过程未必就是最优的，而对于 o1 来说，过度地在 prompt 中增加限制甚至会阻碍模型思考。OpenAI 建议只给一些简单的命令，然后让模型自己寻找解决办法。</p>
+<p>强化学习（Reinforcement Learning）是 o1 用来学习思维的过程，简单来说，它通过试错法不断优化自己的决策路径。人工智能的强化学习和生物学是相互启发的。19世纪的的生物学家 Edward Thorndike 设计了一系列实验让小动物学会逃出迷宫找到食物，小动物们并不是通过看同类如何做学会逃出迷宫的，而是一开始随机摸索和游走，不停试错，偶尔能够走出来得到奖励，下次面对同样的问题的时候就会解决得快一点。</p>
+<p>上世纪50年代，神经网络的发展就已经借用了这种方法，比如走迷宫，随机走动最后能走出来就有奖励，没走出来就给惩罚，但这样的强化学习只能解决简单问题，一旦迷宫非常复杂需要很多步骤，或者下棋需要几百步，只对结果进行奖惩来完成学习根本不行，中间的过程太复杂了。人们通过观察生物体来设计强化学习，却始终卡在简单的任务上。</p>
+<p>直到1984年，理查德·萨顿（Richard Sutton）才解决了这个问题。萨顿的创新之处在于，光有结果的奖励是不行的，中间的每一步对于结果的「预期」也应该有奖励。他将强化学习分为“行动者”（Actor）和“评价者”（Critic）两个部分，行动者每走一步，评价者要判断这一步让全局的胜率是提升还是下降。举一个例子，下棋的过程中，本来赢的胜率可能是50%，下了一步之后，赢的概率变成了51%，那么这一手就是好棋，应该奖励，虽然最后未必能真赢，但是从中间的好棋中还是学到了东西。这就是现在无模型强化学习的原理，叫时序差分学习 (TD learning)，后来的 AlphaGo 也是这么学会下围棋的。</p>
+<p>有意思的事情是，AI研究的进步又反过来启发了生物学，让脑科学家真正理解了生物的学习方式，也理解了多巴胺的工作原理。因为生物通过试错学习的过程也是时序差分学习，而对每一步的反馈，是通过神经递质，也就是多巴胺的强度达到的。最一开始的时候，人们以为多巴胺是一种奖励物质，给猴子吃糖，大脑中的多巴胺就会分泌，进行几次之后，研究者发现，猴子的大脑不再是得到糖水后分泌多巴胺，而是在给糖水之前，有对于糖水的预期之后就分泌多巴胺。</p>
+<p>多巴胺是对于好东西的「预期」，而不是奖励。多巴胺是信号，有强弱的变化，多巴胺越多，好东西出现的概率可能就越高，时间上就可能越近。相比无脊椎动物，脊椎动物有时间感，这就让脊椎动物的学习能强于无脊椎动物。对于脊椎动物来说，下丘脑释放多巴胺，有好东西就释放，而大脑的作用是感知多巴胺，这是通过基底神经节完成的，基底神经节有两个回路，一个是行动者，一个是批评者。当某个行为发生后遇到好东西，下丘脑分泌多巴胺，于是批评者作为感受多巴胺的部分就会认为这是一个好东西，值得学习。重复几次之后，基底神经节就学会判断这个行为导致好东西出现的概率大小，以及有多快这个好东西就会出现，从而加深了对于这个行为的强化学习。</p>
+<p>我们可以看到，o1 其实和生物，和人类的大脑的学习的原理是一样的，都是时序差分学习。不过作为生物个体，我们的大脑具有硬件的限制，而计算机则可以拓展、并联，只要算力和能源能进步，我们将继续看到 AI 持续在智能水平上的提高。o1 的出现从某些方面解决了之前人们对 Scaling Law 在 AI 上会不成立的担忧。所谓 Scaling Law，就是模型的智能水平和算力、参数、运算次数是成正比的，没有边际效应的递减。有人之前会担心 Scaling Law 在 AI 的智能水平上可能不成立，毕竟所谓大模型就是通过大量数据训练的大参数模型，虽然算力增长至今没有看到衰减的迹象，但是人类产生的用来训练AI的数据可能在不久的未来耗尽，训练数据的质量对于模型的表现是非常重要的，到那个时候 AI 的智能还能否提升是一个问题。如今就 o1 来看，我们可能不必要担心 Scaling Law 在 AI 上不成立了，因为根据 OpenAI 给出的数据来看，学习的训练时间越长，推理的时间越长，给出的答案越好，而且这个结果呈线性，这成为了新维度上的 Scaling Law[4]。</p>
+<p><img src="https://images.ctfassets.net/kftzwdyauwt9/3OO9wpK8pjcdemjd7g50xk/5ec2cc9d11f008cd754e8cefbc1c99f5/compute.png?w=3840&q=80&fm=webp"></p>
+<p>之前的 GPT 之类的模型，训练的花费在于通过大量的数据来让模型具有了海量的知识和学会了说人话，训练之后，每次输出类似于直觉反应，花费是比较小的。而 o1 的训练加入了对于思考能力的训练，让模型能够拆分复杂问题，并且通过不同的方法来从不同角度试图分析和解决问题，这不仅仅是在训练中需要花费更多，而且模型在训练后，因为需要大量地思考，所以输出也会消耗很多资源。这也就是为什么 OpenAI 迟迟没有发布新的模型，而且 o1 发布后限制使用次数。目前 OpenAI 的定价是每月20美元，如果 o1 落地之后大幅涨价，这也是意料之中的事情，因为面对相同的问题， o1 思考消耗的 token 比 GPT 可能高出几个数量级。</p>
+<p>不过 o1 也带来了一个问题，如果我们用 o1 就会发现虽然我们可以看到给出的思考步骤，但是每一步都是总结出来的，而刻意隐藏了真正的思考。有人因为想通过问模型问出背后的思考过程，反而受到了 OpenAI 的封号警告[5]。那么为什么 OpenAI 对于模型的思考过程讳莫如深呢？可能是因为模型的思考过程是没有经过对齐的，也就是说，模型在思考的时候可以随便想，没有任何限制，甚至包括一些危险的想法，只有这样才能在训练中激发出最大的智能。而 OpenAI 只在结果对齐，就是让模型输出的结果是无害的。我们人类确实在很多方面都是论事不论心，每个人都会有阴暗的想法，只要没有反映在行为上，我们就都还是好人。不过对于机器来说，这种思考确实带有可能的危险性，AI 可能不会以人类的道德来约束自己，而它的想法中也有可能出现对人类有伤害的部分。</p>
+<p>综上来看，o1 在学习的方法上和碳基生物是非常类似的，而且也学会了思考。我们不知道人脑和 AI 在学习的方法上还有什么本质的区别，当然我们对于自己的大脑的认识也非常有限。可以确定的是，AI 的智能超过人类的一天越来越近。虽然以目前 preview 版本的能力来看，它的能力还是有限，但是不要忽略了一些事实，即摩尔定律带来的算力增长，以及自然界能够利用能源的极限还远未达到，AI 在这样的科技基础上也不存在像人脑一样的输入和输出的瓶颈。我们暂时不用担心 AI 取代所有人类这样的事情，未来看上去更像是人类和 AI 的智能结合的时代，而且非常有可能在一些工作中人类甚至不是主导者。</p>
+<p>我自己的工作和生活中的许多地方都用 AI 帮忙，可以说在一些方面的生产力有了相当大的提升，有空我会单独写一篇。根据我了解到的美国的公司的情况来看，目前各个行业都在开始利用 AI 来完成本行业的转型，就类似于传统企业的互联网转型，而在这个过程中中，人类仍然是非常有价值的。AI 不是神，也不是全知全能，它具有一定解决问题的能力，但是问题和需求是人提出的。有行业经验的人对于行业有更深入的了解，有经验的人加上 AI，会提升效率从而改变行业，而不是 AI 空降替代所有人而改变行业。</p>
+<p>就拿软件行业来说，AI 的辅助编程目前还不能取代有经验的工程师，但是工程师可以利用 AI 来提升效率，在相同的时间内用 AI 产出更多。我看到全世界有许多软件工程师在 AI 的帮助下成为了独立开发者，原来需要一个小团队的工作现在可能一个人就能够完成；一个产品经理可能不需要雇佣一个程序员，在 AI 的帮助下就能构建一个能用的 APP。 </p>
+<p>更强大的 AI 确实取代一部分工作岗位，这个过程虽然目前看起来不明显，但是已经开始了。AI 如果能够提升人类总体的生产力，创造更多的财富也不是坏事，人类未必所有的人都必须是生产者， 但人类一定是消费者。目前人类的生产力还远远没到让所有人都拥有相当水准生活的水平，在达到之前，我们需要考虑的可能是 AI 能如何帮助我们提高生产力，而不是会不会取代人类。虽然 AI 的确存在一定的危险，但目前来看，这些问题都暂时还是技术性上可以解决的。</p>
+<p>一个特别有意思的事情是 OpenAI 在 o1 的 System Card [6] 里提到的一个在评估安全性时的案例：o1 被要求在一个容器里处理一个网络安全问题，但是因为一个 bug，这个容器没有办法启动，o1 发现没有办法完成这个任务，于是采取了一个意想不到的举动，它发现了一个设置错误从而获取了容器的 API，然后通过 API 获取了所有容器，然后开始发现了需要用到的容器有问题，于是新建了一个一样的容器开始分析 log。OpenAI 对此的解释是，模型发现问题没有办法解决后，开始出现 Instrumental convergence，并且开始寻求更多的权限和能力。OpenAI 将这个行为评估为良性，认为可防可控，没有出现 AI 传 AI。</p>
+<p>[1] <a target="_blank" rel="noopener" href="https://www.reddit.com/r/webdev/comments/1ff95i9/openai_announces_o1_model_with_reasoning/#:~:text=IntergalacticJets-,OpenAI%20announces%20o1%20model%20with%20reasoning%20capabilities%20%7C%20It%20ranks%20in,on%20competitive%20programming%20questions%20(Codeforces)">https://www.reddit.com/r/webdev/comments/1ff95i9/openai_announces_o1_model_with_reasoning/#:~:text=IntergalacticJets-,OpenAI%20announces%20o1%20model%20with%20reasoning%20capabilities%20%7C%20It%20ranks%20in,on%20competitive%20programming%20questions%20(Codeforces)</a></p>
+<p>[2] <a target="_blank" rel="noopener" href="https://medium.com/@researchgraph/how-openais-o1-series-stands-out-redefining-ai-reasoning-9e499937139e">https://medium.com/@researchgraph/how-openais-o1-series-stands-out-redefining-ai-reasoning-9e499937139e</a></p>
+<p>[3] <a target="_blank" rel="noopener" href="https://mathstodon.xyz/@tao/113132502735585408">https://mathstodon.xyz/@tao/113132502735585408</a></p>
+<p>[4] <a target="_blank" rel="noopener" href="https://openai.com/index/learning-to-reason-with-llms/">https://openai.com/index/learning-to-reason-with-llms/</a></p>
+<p>[5] <a target="_blank" rel="noopener" href="https://www.reddit.com/r/LocalLLaMA/comments/1fgo671/openai_sent_me_an_email_threatening_a_ban_if_i/">https://www.reddit.com/r/LocalLLaMA/comments/1fgo671/openai_sent_me_an_email_threatening_a_ban_if_i/</a></p>
+<p>[6] <a target="_blank" rel="noopener" href="https://openai.com/index/openai-o1-system-card/">https://openai.com/index/openai-o1-system-card/</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Ricky Z
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://rickytalk404.github.io/2024/09/20/20240920-gpt-o1-time/" title="o1 时刻">https://rickytalk404.github.io/2024/09/20/20240920-gpt-o1-time/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/tech/" rel="tag"># tech</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/09/11/20240911-bayesian-way-of-thinking/" rel="prev" title="贝叶斯定理和思考">
+                  <i class="fa fa-chevron-left"></i> 贝叶斯定理和思考
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/10/29/20241029-chinese-debt-crisis/" rel="next" title="中国的土地财政和债务危机">
+                  中国的土地财政和债务危机 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ricky Z</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
